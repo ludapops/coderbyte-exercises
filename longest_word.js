@@ -23,7 +23,7 @@
  	}
 
     console.log(numbers_array);	//the values are being sent 
-	getMaxOfArray(numbers_array); //Ask Nizar why this line is woking
+	return getMaxOfArray(numbers_array); //Ask Nizar why this line is woking
  }
 
 

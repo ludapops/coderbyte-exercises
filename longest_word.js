@@ -11,19 +11,21 @@
  	var word_array = sen.split(" ");
  	console.log(word_array);
  	var numbers_array = [];
+ 	var longest = 0;
+ 	var word = null;
  	function getMaxOfArray(numArray) {
  	   return Math.max.apply(null, numbers_array);
  	}
  	for(i = 0; i < word_array.length; i++) {
- 		
- 		x = word_array[i].length;
- 		numbers_array.push(x);
- 		
+ 		if (longest < word_array[i].length) {
+ 			longest = word_array[i].length;
+ 			word = word_array[i];
+ 		}
 
  	}
-
-    console.log(numbers_array);	//the values are being sent 
-	return getMaxOfArray(numbers_array); //Ask Nizar why this line is woking
+ 	return word;
+    // console.log(numbers_array);	//the values are being sent 
+	// return getMaxOfArray(numbers_array); //Ask Nizar why this line is woking
  }
 
 
